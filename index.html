@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosta Strona z JavaScript</title>
+	    <!-- Emil Kościecha 3K -->
+    <script>
+        <!-- Funkcja wlaczajaca okno alert -->
+        function showAlert() {
+            alert("Żelo Elo");
+        }
+
+        <!-- Funkcja wlaczajaca okno prompt -->
+        function showPrompt() {
+            var name = prompt("Jak masz na imię?", "");
+            if (name != null) {
+                alert("Witaj, " + name + "!");
+            }
+        }
+
+        <!-- Funkcja wlaczajaca okno confirm -->
+        function showConfirm() {
+            var result = confirm("Elo");
+            if (result) {
+                alert("Żelo");
+            } else {
+                alert("Zakończono działanie.");
+            }
+        }
+
+        <!-- Funkcja do otwarcia nowego okna -->
+        function openNewWindow() {
+            window.open("https://zse.edu.gdansk.pl/pl", "_blank", "width=500,height=500");
+        }
+    </script>
+</head>
+<body>
+    <h1>Elo Żelo</h1>
+    
+<!-- Przyciski --> 
+    <button onclick="showAlert()">Pokaż Alert</button>
+    <button onclick="showPrompt()">Wpisz swoje imię</button>
+    <button onclick="showConfirm()">Potwierdź akcję</button>
+    <button onclick="openNewWindow()">Otwórz nowe okno</button>
+</body>
+<!-- Emil Kościecha 3K -->
+</html>
